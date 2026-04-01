@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cream: #F5F0E8;
+  --ink: #1A1612;
+  --ink-muted: #6B6460;
+  --ink-faint: #C8C2B8;
+  --vermillion: #C8391A;
+  --vermillion-dark: #A02E14;
+  --rule: 1px solid var(--ink);
+  --rule-faint: 1px solid var(--ink-faint);
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Libre Baskerville', Georgia, serif;
+  --font-mono: 'DM Mono', 'Courier New', monospace;
+
+  --max-w: 1200px;
+  --gap: clamp(1rem, 4vw, 3rem);
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--vermillion);
+  color: var(--cream);
+}

@@ -1,0 +1,16 @@
+<!-- PrimeNG Menubar component bound to menu items from the TypeScript file -->
+<p-menubar [model]="items">
+
+  <!-- CUSTOM ITEM TEMPLATE — Defines how each menu item looks -->
+  <ng-template #item let-item let-root="root">
+    <!-- Each menu link; uses PrimeNG Ripple effect and Angular router navigation -->
+    <a pRipple class="flex items-center p-menubar-item-link" [routerLink]="item.routerLink">
+      <!-- Icon (example: Bitcoin) shown next to label -->
+      <i *ngIf="item.icon" [ngClass]="item.icon" style="font-size: 1.5rem; color: rgb(247,173,0);"></i>
+      <!-- Menu label text -->
+      <span>{{ item.label }}</span>
+
+      <p-badge *ngIf="item.badge" [ngClass]="{ 'ml-auto': !root, 'ml-2': root }" [value]="item.badge" />
+    </a>
+  </ng-template>
+</p-menubar>
