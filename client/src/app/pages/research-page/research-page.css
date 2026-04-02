@@ -1,0 +1,116 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  border-bottom: var(--rule);
+  padding: 1.25rem var(--gap);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(12px);
+  background: rgba(13, 15, 18, 0.85);
+  z-index: 100;
+}
+
+.nav__logo {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.nav__links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav__links a {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.nav__links a:hover { color: var(--cyan); }
+
+.research-hero {
+  padding: clamp(4rem, 10vw, 8rem) var(--gap) clamp(3rem, 6vw, 5rem);
+  border-bottom: var(--rule);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 1.5rem;
+  height: 1px;
+  background: var(--cyan);
+}
+
+.research-heading {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  font-weight: 800;
+  line-height: 0.88;
+  letter-spacing: -0.03em;
+}
+
+.research-heading em {
+  font-style: normal;
+  color: var(--cyan);
+}
+
+.coming-soon {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem var(--gap);
+}
+
+.coming-soon p {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  letter-spacing: 0.1em;
+}
+
+.coming-soon p::before { content: '// '; }
+
+.footer {
+  padding: 1.25rem var(--gap);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: var(--rule);
+}
+
+.footer__copy {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  color: var(--text-faint);
+  text-transform: uppercase;
+}
+
+.footer__copy a { color: var(--text-faint); transition: color 0.2s; }
+.footer__copy a:hover { color: var(--cyan); }

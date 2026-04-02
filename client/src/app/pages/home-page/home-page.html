@@ -1,6 +1,5 @@
 <div class="page">
 
-  <!-- Navigation -->
   <nav class="nav">
     <span class="nav__logo">Owen Holm</span>
     <ul class="nav__links">
@@ -11,63 +10,38 @@
     </ul>
   </nav>
 
-  <!-- Hero -->
   <header class="hero">
-    <div class="hero__left">
+    <div>
       <p class="hero__eyebrow">Portfolio — 2025</p>
       <h1 class="hero__name">Owen<br><em>Holm</em></h1>
       <p class="hero__tagline">Researcher & engineer working at the intersection of machine learning and human systems.</p>
     </div>
     <div class="hero__meta">
-      <p class="hero__status">
-        <strong>Status</strong>
-        Open to opportunities
-      </p>
-      <p class="hero__status" style="margin-top: 1.25rem;">
-        <strong>Location</strong>
-        San Francisco, CA
-      </p>
-      <p class="hero__status" style="margin-top: 1.25rem;">
-        <strong>Focus</strong>
-        ML · Systems · HCI
-      </p>
+      <div class="hero__stat"><strong>Status</strong>Open to opportunities</div>
+      <div class="hero__stat"><strong>Location</strong>San Francisco, CA</div>
+      <div class="hero__stat"><strong>Focus</strong>ML · Systems · HCI</div>
     </div>
   </header>
 
-  <!-- Index strip -->
-  <div class="index-strip">
-    <div class="index-strip__item">§ 01 — Introduction</div>
-    <div class="index-strip__item">§ 02 — Research</div>
-    <div class="index-strip__item">§ 03 — Expertise</div>
-    <div class="index-strip__item">§ 04 — Contact</div>
+  <div class="ticker">
+    <div class="ticker__item ticker__item--active">01 Introduction</div>
+    <div class="ticker__item">02 Research</div>
+    <div class="ticker__item">03 Expertise</div>
+    <div class="ticker__item">04 Contact</div>
   </div>
 
-  <!-- Bio -->
   <section class="bio" id="about">
     <div class="bio__label">
       § 01
-      <span>Introduction</span>
+      <strong>Introduction</strong>
     </div>
     <div class="bio__content">
-      <p>
-        I build systems that bridge the gap between <em>machine intelligence</em> and human understanding.
-        My work spans theoretical research into model robustness and the engineering of production-scale
-        ML pipelines that actually ship.
-      </p>
-      <p>
-        Previously at [Company], where I led a team designing adaptive recommendation architectures
-        serving 10M+ users. Before that, I completed my graduate research at [University], focusing on
-        interpretability in large language models.
-      </p>
-      <p>
-        I believe the most interesting problems live at the edges — where disciplines collide,
-        where assumptions break down, where the obvious answer turns out to be wrong.
-        That's where I do my best work.
-      </p>
+      <p>I build systems that bridge the gap between <em>machine intelligence</em> and human understanding. My work spans theoretical research into model robustness and the engineering of production-scale ML pipelines that actually ship.</p>
+      <p>Previously at [Company], where I led a team designing adaptive recommendation architectures serving 10M+ users. Before that, I completed my graduate research at [University], focusing on interpretability in large language models.</p>
+      <p>I believe the most interesting problems live at the edges — where disciplines collide, where assumptions break down, where the obvious answer turns out to be wrong.</p>
     </div>
   </section>
 
-  <!-- Research -->
   <section class="research" id="research">
     <div class="research__header">
       <h2 class="research__heading">Research</h2>
@@ -76,52 +50,63 @@
     <ul class="research__list">
       <li class="research__item">
         <span class="research__item-num">01</span>
-        <div class="research__item-body">
+        <div>
           <p class="research__item-title">Attention Mechanisms in Sparse Transformers: A Geometric Perspective</p>
           <p class="research__item-venue">NeurIPS 2024 · Co-authored with J. Chen, M. Park</p>
         </div>
-        <div class="research__item-tags">
-          <span class="tag">ML</span>
-          <span class="tag">Theory</span>
+        <div class="research__item-right">
+          <div class="research__item-tags">
+            <span class="tag">ML</span>
+            <span class="tag">Theory</span>
+          </div>
+          <span class="research__item-arrow">→</span>
         </div>
       </li>
       <li class="research__item">
         <span class="research__item-num">02</span>
-        <div class="research__item-body">
+        <div>
           <p class="research__item-title">On the Robustness of Retrieval-Augmented Generation Under Distribution Shift</p>
           <p class="research__item-venue">ICML 2024 · Workshop on Reliable ML</p>
         </div>
-        <div class="research__item-tags">
-          <span class="tag">RAG</span>
-          <span class="tag">Robustness</span>
+        <div class="research__item-right">
+          <div class="research__item-tags">
+            <span class="tag">RAG</span>
+            <span class="tag">Robustness</span>
+          </div>
+          <span class="research__item-arrow">→</span>
         </div>
       </li>
       <li class="research__item">
         <span class="research__item-num">03</span>
-        <div class="research__item-body">
+        <div>
           <p class="research__item-title">Human-in-the-Loop Correction Strategies for LLM-Assisted Decision Systems</p>
           <p class="research__item-venue">CHI 2023 · Best Paper Honorable Mention</p>
         </div>
-        <div class="research__item-tags">
-          <span class="tag">HCI</span>
-          <span class="tag">LLMs</span>
+        <div class="research__item-right">
+          <div class="research__item-tags">
+            <span class="tag">HCI</span>
+            <span class="tag">LLMs</span>
+          </div>
+          <span class="research__item-arrow">→</span>
         </div>
       </li>
       <li class="research__item">
         <span class="research__item-num">04</span>
-        <div class="research__item-body">
+        <div>
           <p class="research__item-title">Efficient Fine-Tuning of Foundation Models via Structured Pruning</p>
           <p class="research__item-venue">ICLR 2023</p>
         </div>
-        <div class="research__item-tags">
-          <span class="tag">Efficiency</span>
-          <span class="tag">Pruning</span>
+        <div class="research__item-right">
+          <div class="research__item-tags">
+            <span class="tag">Efficiency</span>
+            <span class="tag">Pruning</span>
+          </div>
+          <span class="research__item-arrow">→</span>
         </div>
       </li>
     </ul>
   </section>
 
-  <!-- Expertise -->
   <section class="expertise">
     <div class="expertise__col">
       <p class="expertise__num">04+</p>
@@ -165,41 +150,22 @@
     </div>
   </section>
 
-  <!-- Contact -->
   <section class="contact" id="contact">
-    <h2 class="contact__heading">Let's<br><em>talk.</em></h2>
+    <div>
+      <h2 class="contact__heading">Let's<br><em>talk.</em></h2>
+      <p class="contact__sub">Open to research collaborations, engineering roles, and interesting conversations.</p>
+    </div>
     <ul class="contact__links">
-      <li>
-        <a href="mailto:owen&#64;example.com">
-          Email <span>→</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com" target="_blank" rel="noopener">
-          GitHub <span>→</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://linkedin.com" target="_blank" rel="noopener">
-          LinkedIn <span>→</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com" target="_blank" rel="noopener">
-          Twitter / X <span>→</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank" rel="noopener">
-          CV / Résumé <span>↓</span>
-        </a>
-      </li>
+      <li><a href="mailto:owen&#64;example.com">Email <span class="arrow">→</span></a></li>
+      <li><a href="https://github.com" target="_blank" rel="noopener">GitHub <span class="arrow">→</span></a></li>
+      <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn <span class="arrow">→</span></a></li>
+      <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X <span class="arrow">→</span></a></li>
+      <li><a href="#" target="_blank" rel="noopener">CV / Résumé <span class="arrow">↓</span></a></li>
     </ul>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
-    <span class="footer__copy">© 2025 Owen Holm — All rights reserved</span>
+    <span class="footer__copy">© 2025 Owen Holm</span>
     <span class="footer__copy">Built with Angular 21</span>
   </footer>
 
